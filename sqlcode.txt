@@ -1,0 +1,32 @@
+-- Create a new database for the prescription system
+CREATE DATABASE IF NOT EXISTS new_prescription_db;
+
+-- Switch to the new database
+USE new_prescription_db;
+
+-- Create the prescriptions table
+CREATE TABLE IF NOT EXISTS prescriptions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    patient_name VARCHAR(255),
+    age INT,
+    sex VARCHAR(10),
+    address VARCHAR(255),
+    -- Right Eye Fields
+    right_eye_sph1 VARCHAR(10),  -- First SP for right eye
+    right_eye_sph2 VARCHAR(10),  -- Second SP for right eye
+    right_eye_cyl1 VARCHAR(10),  -- First CY for right eye
+    right_eye_cyl2 VARCHAR(10),  -- Second CY for right eye
+    right_eye_axis1 VARCHAR(10), -- First Axis for right eye
+    right_eye_axis2 VARCHAR(10), -- Second Axis for right eye
+    -- Left Eye Fields
+    left_eye_sph1 VARCHAR(10),   -- First SP for left eye
+    left_eye_sph2 VARCHAR(10),   -- Second SP for left eye
+    left_eye_cyl1 VARCHAR(10),   -- First CY for left eye
+    left_eye_cyl2 VARCHAR(10),   -- Second CY for left eye
+    left_eye_axis1 VARCHAR(10),  -- First Axis for left eye
+    left_eye_axis2 VARCHAR(10),  -- Second Axis for left eye
+    -- Other Fields
+    add_for_near VARCHAR(10),
+    prescription_type VARCHAR(255),
+    date DATE
+);

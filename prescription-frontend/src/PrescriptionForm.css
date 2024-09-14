@@ -1,0 +1,159 @@
+/* Container for the entire form */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* General styling for form sections */
+.form-section {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the prescription details table (eyes) */
+.eye-table-container {
+    margin-top: 20px;
+}
+
+.eye-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.eye-table th, .eye-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.eye-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.eye-table input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Search form and results table styling */
+.search-container {
+    margin-top: 40px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.results-table th, .results-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.results-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.no-results {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Styling for each prescription result */
+.prescription-result {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Prescription details table for the search results */
+.template-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.template-table th, .template-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.template-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Heading for the result date */
+h4 {
+    margin-top: 0;
+}
+
+/* Custom styling for form and search results */
+.form-section, .prescription-result {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prescription-result h4 {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Aligning the input fields for better layout */
+.eye-table-container .eye-table th, 
+.eye-table-container .eye-table td, 
+.template-table th, 
+.template-table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
